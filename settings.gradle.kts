@@ -24,4 +24,9 @@ dependencyResolutionManagement {
 
 rootProject.name = "Jedi Archive"
 include(":app")
- 
+include(":core:agents")
+include(":agents:architect")
+include(":agents:engineer")
+include(":agents:uiux")
+include(":agents:api")
+include(":agents:qa")

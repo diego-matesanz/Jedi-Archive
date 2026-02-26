@@ -31,8 +31,8 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
     buildFeatures {
         compose = true
@@ -40,6 +40,15 @@ android {
 }
 
 dependencies {
+    // Agent System
+    implementation(project(":core:agents"))
+    implementation(project(":agents:architect"))
+    implementation(project(":agents:engineer"))
+    implementation(project(":agents:uiux"))
+    implementation(project(":agents:api"))
+    implementation(project(":agents:qa"))
+
+    // Android
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
@@ -48,6 +57,11 @@ dependencies {
     implementation(libs.androidx.compose.ui.graphics)
     implementation(libs.androidx.compose.ui.tooling.preview)
     implementation(libs.androidx.compose.material3)
+
+    // Coroutines
+    implementation(libs.kotlinx.coroutines.core)
+
+    // Testing
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
