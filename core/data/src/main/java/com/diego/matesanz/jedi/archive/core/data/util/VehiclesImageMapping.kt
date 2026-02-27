@@ -4,7 +4,7 @@ package com.diego.matesanz.jedi.archive.core.data.util
  * Mapeo estático de IDs de Vehículos SWAPI a URLs de imágenes de Wookieepedia
  * Generado automáticamente desde MediaWiki API
  * Última actualización: 2026-02-27
- * Total de imágenes: 25
+ * Total de imágenes: 39
  */
 object VehiclesImageMapping {
     val imageUrls = mapOf(
@@ -33,5 +33,19 @@ object VehiclesImageMapping {
         "71" to "https://static.wikia.nocookie.net/starwars/images/8/81/HAVwA6Juggernauts-SWBoL.png/revision/latest/scale-to-width-down/500?cb=20230806162213",
         "72" to "https://static.wikia.nocookie.net/starwars/images/7/73/Tank_droid_TCW.png/revision/latest/scale-to-width-down/500?cb=20170703051940",
         "73" to "https://static.wikia.nocookie.net/starwars/images/6/6d/DroidGunship-DB.png/revision/latest/scale-to-width-down/500?cb=20241003001621",
+        "8" to "https://static.wikia.nocookie.net/starwars/images/d/d1/TIE_Fighter_DICE.png/revision/latest/scale-to-width-down/430?cb=20161021230639",
+        "16" to "https://static.wikia.nocookie.net/starwars/images/b/ba/BombingKryzeCastle-TMch19.png/revision/latest/scale-to-width-down/500?cb=20230701160251",
+        "18" to "https://static.wikia.nocookie.net/starwars/images/1/16/AT-AT_2_Fathead.png/revision/latest/scale-to-width-down/348?cb=20161108042721",
+        "19" to "https://static.wikia.nocookie.net/starwars/images/f/ff/ATST-SWBdice.png/revision/latest/scale-to-width-down/302?cb=20230723050455",
+        "30" to "https://static.wikia.nocookie.net/starwars/images/4/47/Speeder_Bike_DICE.png/revision/latest/scale-to-width-down/500?cb=20230723010519",
+        "33" to "https://static.wikia.nocookie.net/starwars/images/a/a4/CISVultureDroidWalk-TCW.png/revision/latest/scale-to-width-down/500?cb=20231010234254",
+        "42" to "https://static.wikia.nocookie.net/starwars/images/d/dc/Sith_Speeder_Tatooine.png/revision/latest/scale-to-width-down/500?cb=20130620093955",
+        "50" to "https://static.wikia.nocookie.net/starwars/images/4/49/LAATGunship-Convergence.png/revision/latest/scale-to-width-down/500?cb=20190616225054",
+        "53" to "https://static.wikia.nocookie.net/starwars/images/6/60/ATTE-CGSWG.png/revision/latest/scale-to-width-down/500?cb=20250404044201",
+        "54" to "https://static.wikia.nocookie.net/starwars/images/7/79/SPHA-Timelines.png/revision/latest/scale-to-width-down/500?cb=20240914012658",
+        "55" to "https://static.wikia.nocookie.net/starwars/images/d/d7/FlitknotSpeeder-WSMI.png/revision/latest/scale-to-width-down/500?cb=20221030050107",
+        "56" to "https://static.wikia.nocookie.net/starwars/images/1/1c/Sheathipede-SWE.png/revision/latest/scale-to-width-down/500?cb=20260225010523",
+        "57" to "https://static.wikia.nocookie.net/starwars/images/8/82/Nantex-class_fighters.png/revision/latest/scale-to-width-down/500?cb=20200120054757",
+        "76" to "https://static.wikia.nocookie.net/starwars/images/e/ee/AT-RT_Unmanned.jpg/revision/latest/scale-to-width-down/371?cb=20110204150748",
     )
 }

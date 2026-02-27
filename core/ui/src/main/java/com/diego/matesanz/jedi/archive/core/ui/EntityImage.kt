@@ -33,7 +33,7 @@ fun EntityImage(
     entityType: EntityType,
     modifier: Modifier = Modifier,
     shape: Shape = MaterialTheme.shapes.medium,
-    contentScale: ContentScale = ContentScale.Crop,
+    contentScale: ContentScale = ContentScale.Fit,
     placeholderTextStyle: TextStyle = MaterialTheme.typography.headlineMedium
 ) {
     if (imageUrl == null) {

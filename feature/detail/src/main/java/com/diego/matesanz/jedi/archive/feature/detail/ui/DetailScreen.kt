@@ -9,6 +9,7 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import com.diego.matesanz.jedi.archive.core.designsystem.Spacing
@@ -147,11 +148,14 @@ private fun SuccessState(
                     EntityImage(
                         imageUrl = entity.imageUrl,
                         entityType = entity.type,
-                        modifier = Modifier.size(120.dp),
+                        modifier = Modifier
+                            .fillMaxWidth(0.8f)
+                            .heightIn(max = 240.dp),
                         shape = MaterialTheme.shapes.large,
-                        placeholderTextStyle = MaterialTheme.typography.displayLarge
+                        placeholderTextStyle = MaterialTheme.typography.displayLarge,
+                        contentScale = ContentScale.Fit
                     )
-                    Spacer(modifier = Modifier.height(Spacing.sm))
+                    Spacer(modifier = Modifier.height(Spacing.md))
                     Text(
                         text = entity.name,
                         style = MaterialTheme.typography.headlineMedium,
