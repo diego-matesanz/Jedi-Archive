@@ -34,13 +34,32 @@ android {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
     }
+
     buildFeatures {
         compose = true
     }
 }
 
+kotlin {
+    jvmToolchain(17)
+}
+
 dependencies {
-    // Agent System
+    // Feature modules
+    implementation(project(":feature:search"))
+    implementation(project(":feature:detail"))
+    implementation(project(":feature:settings"))
+
+    // Core modules
+    implementation(project(":core:designsystem"))
+    implementation(project(":core:ui"))
+    implementation(project(":core:domain"))
+    implementation(project(":core:data"))
+    implementation(project(":core:network"))
+    implementation(project(":core:datastore"))
+    implementation(project(":core:navigation"))
+
+    // Agent System (for development/debugging)
     implementation(project(":core:agents"))
     implementation(project(":agents:architect"))
     implementation(project(":agents:engineer"))
@@ -58,8 +77,20 @@ dependencies {
     implementation(libs.androidx.compose.ui.tooling.preview)
     implementation(libs.androidx.compose.material3)
 
+    // Navigation
+    implementation(libs.androidx.navigation.compose)
+
+    // TODO: Add Hilt in future
+
     // Coroutines
     implementation(libs.kotlinx.coroutines.core)
+
+    // DI Manual - Network dependencies for manual DI in NavHost
+    implementation(libs.retrofit)
+    implementation(libs.retrofit.kotlinx.serialization)
+    implementation(libs.okhttp)
+    implementation(libs.okhttp.logging)
+    implementation(libs.kotlinx.serialization.json)
 
     // Testing
     testImplementation(libs.junit)

@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "com.diego.matesanz.jedi.archive.feature.settings-release-52:/drawable-ldpi-v4/ic_call_answer_low.png",
+        "source": "com.diego.matesanz.jedi.archive.feature.settings-core-1.13.1-4:/drawable-ldpi-v4/ic_call_answer_low.png"
+    },
+    {
+        "merged": "com.diego.matesanz.jedi.archive.feature.settings-release-52:/drawable-ldpi-v4/ic_call_answer_video_low.png",
+        "source": "com.diego.matesanz.jedi.archive.feature.settings-core-1.13.1-4:/drawable-ldpi-v4/ic_call_answer_video_low.png"
+    },
+    {
+        "merged": "com.diego.matesanz.jedi.archive.feature.settings-release-52:/drawable-ldpi-v4/ic_call_decline_low.png",
+        "source": "com.diego.matesanz.jedi.archive.feature.settings-core-1.13.1-4:/drawable-ldpi-v4/ic_call_decline_low.png"
+    },
+    {
+        "merged": "com.diego.matesanz.jedi.archive.feature.settings-release-52:/drawable-ldpi-v4/ic_call_answer_video.png",
+        "source": "com.diego.matesanz.jedi.archive.feature.settings-core-1.13.1-4:/drawable-ldpi-v4/ic_call_answer_video.png"
+    },
+    {
+        "merged": "com.diego.matesanz.jedi.archive.feature.settings-release-52:/drawable-ldpi-v4/ic_call_decline.png",
+        "source": "com.diego.matesanz.jedi.archive.feature.settings-core-1.13.1-4:/drawable-ldpi-v4/ic_call_decline.png"
+    },
+    {
+        "merged": "com.diego.matesanz.jedi.archive.feature.settings-release-52:/drawable-ldpi-v4/ic_call_answer.png",
+        "source": "com.diego.matesanz.jedi.archive.feature.settings-core-1.13.1-4:/drawable-ldpi-v4/ic_call_answer.png"
+    }
+]

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.diego.matesanz.jedi.archive.feature.search.SearchViewModelTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-02-27T08:57:14.079Z" hostname="dmatesanz" time="0.619">
+  <properties/>
+  <testcase name="search with query triggers SearchUseCase and updates state to Success" classname="com.diego.matesanz.jedi.archive.feature.search.SearchViewModelTest" time="0.589"/>
+  <testcase name="clear search resets query and state" classname="com.diego.matesanz.jedi.archive.feature.search.SearchViewModelTest" time="0.003"/>
+  <testcase name="search with error updates state to Error" classname="com.diego.matesanz.jedi.archive.feature.search.SearchViewModelTest" time="0.007"/>
+  <testcase name="initial state is Initial" classname="com.diego.matesanz.jedi.archive.feature.search.SearchViewModelTest" time="0.003"/>
+  <testcase name="debounce prevents multiple rapid searches" classname="com.diego.matesanz.jedi.archive.feature.search.SearchViewModelTest" time="0.007"/>
+  <testcase name="search with empty query does not trigger search" classname="com.diego.matesanz.jedi.archive.feature.search.SearchViewModelTest" time="0.006"/>
+  <testcase name="category filter is applied correctly" classname="com.diego.matesanz.jedi.archive.feature.search.SearchViewModelTest" time="0.004"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

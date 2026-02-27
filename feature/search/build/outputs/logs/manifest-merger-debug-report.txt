@@ -1,0 +1,16 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/dmatesanz/AndroidStudioProjects/JediArchive/feature/search/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest5601452423210311527.xml:2:13-83
+INJECTED from /Users/dmatesanz/AndroidStudioProjects/JediArchive/feature/search/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest5601452423210311527.xml:2:13-83
+	package
+		INJECTED from /Users/dmatesanz/AndroidStudioProjects/JediArchive/feature/search/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest5601452423210311527.xml
+	xmlns:android
+		ADDED from /Users/dmatesanz/AndroidStudioProjects/JediArchive/feature/search/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest5601452423210311527.xml:2:23-81
+uses-sdk
+INJECTED from /Users/dmatesanz/AndroidStudioProjects/JediArchive/feature/search/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest5601452423210311527.xml reason: use-sdk injection requested
+INJECTED from /Users/dmatesanz/AndroidStudioProjects/JediArchive/feature/search/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest5601452423210311527.xml
+INJECTED from /Users/dmatesanz/AndroidStudioProjects/JediArchive/feature/search/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest5601452423210311527.xml
+	android:targetSdkVersion
+		INJECTED from /Users/dmatesanz/AndroidStudioProjects/JediArchive/feature/search/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest5601452423210311527.xml
+	android:minSdkVersion
+		INJECTED from /Users/dmatesanz/AndroidStudioProjects/JediArchive/feature/search/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest5601452423210311527.xml

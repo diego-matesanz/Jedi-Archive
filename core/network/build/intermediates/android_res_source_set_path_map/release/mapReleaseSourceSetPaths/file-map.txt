@@ -1,0 +1,7 @@
+com.diego.matesanz.jedi.archive.core.network-pngs-0 /Users/dmatesanz/AndroidStudioProjects/JediArchive/core/network/build/generated/res/pngs/release
+com.diego.matesanz.jedi.archive.core.network-updated_navigation_xml-1 /Users/dmatesanz/AndroidStudioProjects/JediArchive/core/network/build/generated/updated_navigation_xml/release
+com.diego.matesanz.jedi.archive.core.network-mergeReleaseResources-2 /Users/dmatesanz/AndroidStudioProjects/JediArchive/core/network/build/intermediates/incremental/release/mergeReleaseResources/merged.dir
+com.diego.matesanz.jedi.archive.core.network-mergeReleaseResources-3 /Users/dmatesanz/AndroidStudioProjects/JediArchive/core/network/build/intermediates/incremental/release/mergeReleaseResources/stripped.dir
+com.diego.matesanz.jedi.archive.core.network-release-4 /Users/dmatesanz/AndroidStudioProjects/JediArchive/core/network/build/intermediates/merged_res/release/mergeReleaseResources
+com.diego.matesanz.jedi.archive.core.network-main-5 /Users/dmatesanz/AndroidStudioProjects/JediArchive/core/network/src/main/res
+com.diego.matesanz.jedi.archive.core.network-release-6 /Users/dmatesanz/AndroidStudioProjects/JediArchive/core/network/src/release/res

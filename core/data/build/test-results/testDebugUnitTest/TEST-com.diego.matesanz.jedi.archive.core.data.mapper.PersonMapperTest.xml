@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.diego.matesanz.jedi.archive.core.data.mapper.PersonMapperTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-02-27T08:57:07.601Z" hostname="dmatesanz" time="0.014">
+  <properties/>
+  <testcase name="toDomain handles empty lists correctly" classname="com.diego.matesanz.jedi.archive.core.data.mapper.PersonMapperTest" time="0.013"/>
+  <testcase name="toDomainList maps list of DTOs correctly" classname="com.diego.matesanz.jedi.archive.core.data.mapper.PersonMapperTest" time="0.0"/>
+  <testcase name="toDomain extracts IDs from URLs correctly" classname="com.diego.matesanz.jedi.archive.core.data.mapper.PersonMapperTest" time="0.001"/>
+  <testcase name="toDomain handles blank homeworld correctly" classname="com.diego.matesanz.jedi.archive.core.data.mapper.PersonMapperTest" time="0.0"/>
+  <testcase name="toDomain maps PersonDto correctly" classname="com.diego.matesanz.jedi.archive.core.data.mapper.PersonMapperTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

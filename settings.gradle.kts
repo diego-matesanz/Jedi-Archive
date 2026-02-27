@@ -23,7 +23,25 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "Jedi Archive"
+
+// Main app
 include(":app")
+
+// Feature modules
+include(":feature:search")
+include(":feature:detail")
+include(":feature:settings")
+
+// Core modules
+include(":core:ui")
+include(":core:designsystem")
+include(":core:domain")
+include(":core:data")
+include(":core:network")
+include(":core:datastore")
+include(":core:navigation")
+
+// Agent system modules
 include(":core:agents")
 include(":agents:architect")
 include(":agents:engineer")

@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "com.diego.matesanz.jedi.archive.core.designsystem-release-40:/color/vector_tint_color.xml",
+        "source": "com.diego.matesanz.jedi.archive.core.designsystem-ui-release-21:/color/vector_tint_color.xml"
+    },
+    {
+        "merged": "com.diego.matesanz.jedi.archive.core.designsystem-release-40:/color/vector_tint_theme_color.xml",
+        "source": "com.diego.matesanz.jedi.archive.core.designsystem-ui-release-21:/color/vector_tint_theme_color.xml"
+    }
+]

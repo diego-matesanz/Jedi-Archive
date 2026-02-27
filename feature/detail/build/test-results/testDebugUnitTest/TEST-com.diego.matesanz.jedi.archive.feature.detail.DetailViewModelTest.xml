@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.diego.matesanz.jedi.archive.feature.detail.DetailViewModelTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-02-27T08:57:12.479Z" hostname="dmatesanz" time="0.69">
+  <properties/>
+  <testcase name="initial state is Loading" classname="com.diego.matesanz.jedi.archive.feature.detail.DetailViewModelTest" time="0.576"/>
+  <testcase name="loadDetail twice updates state correctly" classname="com.diego.matesanz.jedi.archive.feature.detail.DetailViewModelTest" time="0.097"/>
+  <testcase name="getDetailSections for Person returns correct sections" classname="com.diego.matesanz.jedi.archive.feature.detail.DetailViewModelTest" time="0.001"/>
+  <testcase name="loadDetail with valid entity updates state to Success" classname="com.diego.matesanz.jedi.archive.feature.detail.DetailViewModelTest" time="0.008"/>
+  <testcase name="retry calls loadDetail again" classname="com.diego.matesanz.jedi.archive.feature.detail.DetailViewModelTest" time="0.005"/>
+  <testcase name="loadDetail with error updates state to Error" classname="com.diego.matesanz.jedi.archive.feature.detail.DetailViewModelTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
