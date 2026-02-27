@@ -17,7 +17,8 @@ data class Vehicle(
     val cargoCapacity: String,
     val consumables: String,
     val pilotIds: List<String>,
-    val filmIds: List<String>
+    val filmIds: List<String>,
+    override val imageUrl: String? = null
 ) : SwapiEntity {
     override val type = EntityType.VEHICLE
 }

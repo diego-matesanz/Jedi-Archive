@@ -1,5 +1,7 @@
 package com.diego.matesanz.jedi.archive.core.data.mapper
 
+import com.diego.matesanz.jedi.archive.core.data.util.ImageUrlProvider
+import com.diego.matesanz.jedi.archive.core.domain.model.EntityType
 import com.diego.matesanz.jedi.archive.core.domain.model.Person
 import com.diego.matesanz.jedi.archive.core.network.dto.PersonDto
 import com.diego.matesanz.jedi.archive.core.network.util.UrlExtractor
@@ -10,8 +12,9 @@ import com.diego.matesanz.jedi.archive.core.network.util.UrlExtractor
 object PersonMapper {
 
     fun toDomain(dto: PersonDto): Person {
+        val id = UrlExtractor.extractId(dto.url)
         return Person(
-            id = UrlExtractor.extractId(dto.url),
+            id = id,
             name = dto.name,
             birthYear = dto.birthYear,
             eyeColor = dto.eyeColor,
@@ -24,7 +27,8 @@ object PersonMapper {
             filmIds = UrlExtractor.extractIds(dto.films),
             speciesIds = UrlExtractor.extractIds(dto.species),
             starshipIds = UrlExtractor.extractIds(dto.starships),
-            vehicleIds = UrlExtractor.extractIds(dto.vehicles)
+            vehicleIds = UrlExtractor.extractIds(dto.vehicles),
+            imageUrl = ImageUrlProvider.getImageUrl(EntityType.PERSON, id)
         )
     }
 

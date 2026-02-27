@@ -17,7 +17,8 @@ data class Person(
     val filmIds: List<String>,
     val speciesIds: List<String>,
     val starshipIds: List<String>,
-    val vehicleIds: List<String>
+    val vehicleIds: List<String>,
+    override val imageUrl: String? = null
 ) : SwapiEntity {
     override val type = EntityType.PERSON
 }

@@ -16,6 +16,7 @@ import com.diego.matesanz.jedi.archive.core.designsystem.ComponentShapes
 import com.diego.matesanz.jedi.archive.core.designsystem.Spacing
 import com.diego.matesanz.jedi.archive.core.domain.model.SearchResult
 import com.diego.matesanz.jedi.archive.core.navigation.toNavigationArg
+import com.diego.matesanz.jedi.archive.core.ui.EntityImage
 import com.diego.matesanz.jedi.archive.feature.search.CategoryFilter
 
 /**
@@ -164,19 +165,14 @@ private fun ResultCard(
                 .padding(Spacing.md),
             verticalAlignment = Alignment.CenterVertically
         ) {
-            // Icon placeholder basado en tipo
-            Surface(
+            // Entity image with shimmer/fade-in
+            EntityImage(
+                imageUrl = result.imageUrl,
+                entityType = result.type,
                 modifier = Modifier.size(48.dp),
                 shape = MaterialTheme.shapes.medium,
-                color = MaterialTheme.colorScheme.primaryContainer
-            ) {
-                Box(contentAlignment = Alignment.Center) {
-                    Text(
-                        text = getEntityIcon(result.type.name),
-                        style = MaterialTheme.typography.headlineSmall
-                    )
-                }
-            }
+                placeholderTextStyle = MaterialTheme.typography.headlineSmall
+            )
 
             Spacer(modifier = Modifier.width(Spacing.md))
 
@@ -208,20 +204,5 @@ private fun ResultCard(
                 )
             )
         }
-    }
-}
-
-/**
- * Devuelve un emoji según el tipo de entidad
- */
-private fun getEntityIcon(entityType: String): String {
-    return when (entityType) {
-        "PERSON" -> "👤"
-        "PLANET" -> "🌍"
-        "SPECIES" -> "👽"
-        "STARSHIP" -> "🚀"
-        "VEHICLE" -> "🚗"
-        "FILM" -> "🎬"
-        else -> "📄"
     }
 }

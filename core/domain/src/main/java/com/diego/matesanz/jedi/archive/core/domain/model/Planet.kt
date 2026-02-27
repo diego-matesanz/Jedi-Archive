@@ -15,7 +15,8 @@ data class Planet(
     val surfaceWater: String,
     val terrain: String,
     val residentIds: List<String>,
-    val filmIds: List<String>
+    val filmIds: List<String>,
+    override val imageUrl: String? = null
 ) : SwapiEntity {
     override val type = EntityType.PLANET
 }

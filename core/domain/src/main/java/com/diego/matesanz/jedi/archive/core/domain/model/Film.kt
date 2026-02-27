@@ -16,7 +16,8 @@ data class Film(
     val planetIds: List<String>,
     val starshipIds: List<String>,
     val vehicleIds: List<String>,
-    val speciesIds: List<String>
+    val speciesIds: List<String>,
+    override val imageUrl: String? = null
 ) : SwapiEntity {
     override val type = EntityType.FILM
 }

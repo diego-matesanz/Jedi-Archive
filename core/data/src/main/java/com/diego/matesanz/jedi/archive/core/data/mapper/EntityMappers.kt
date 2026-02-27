@@ -1,5 +1,6 @@
 package com.diego.matesanz.jedi.archive.core.data.mapper
 
+import com.diego.matesanz.jedi.archive.core.data.util.ImageUrlProvider
 import com.diego.matesanz.jedi.archive.core.domain.model.*
 import com.diego.matesanz.jedi.archive.core.network.dto.*
 import com.diego.matesanz.jedi.archive.core.network.util.UrlExtractor
@@ -11,8 +12,9 @@ import com.diego.matesanz.jedi.archive.core.network.util.UrlExtractor
 // ===== Planet Mapper =====
 object PlanetMapper {
     fun toDomain(dto: PlanetDto): Planet {
+        val id = UrlExtractor.extractId(dto.url)
         return Planet(
-            id = UrlExtractor.extractId(dto.url),
+            id = id,
             name = dto.name,
             climate = dto.climate,
             diameter = dto.diameter,
@@ -23,7 +25,8 @@ object PlanetMapper {
             surfaceWater = dto.surfaceWater,
             terrain = dto.terrain,
             residentIds = UrlExtractor.extractIds(dto.residents),
-            filmIds = UrlExtractor.extractIds(dto.films)
+            filmIds = UrlExtractor.extractIds(dto.films),
+            imageUrl = ImageUrlProvider.getImageUrl(EntityType.PLANET, id)
         )
     }
 
@@ -33,8 +36,9 @@ object PlanetMapper {
 // ===== Species Mapper =====
 object SpeciesMapper {
     fun toDomain(dto: SpeciesDto): Species {
+        val id = UrlExtractor.extractId(dto.url)
         return Species(
-            id = UrlExtractor.extractId(dto.url),
+            id = id,
             name = dto.name,
             classification = dto.classification,
             designation = dto.designation,
@@ -46,7 +50,8 @@ object SpeciesMapper {
             language = dto.language,
             homeworldId = dto.homeworld?.takeIf { it.isNotBlank() }?.let { UrlExtractor.extractId(it) },
             peopleIds = UrlExtractor.extractIds(dto.people),
-            filmIds = UrlExtractor.extractIds(dto.films)
+            filmIds = UrlExtractor.extractIds(dto.films),
+            imageUrl = ImageUrlProvider.getImageUrl(EntityType.SPECIES, id)
         )
     }
 
@@ -56,8 +61,9 @@ object SpeciesMapper {
 // ===== Starship Mapper =====
 object StarshipMapper {
     fun toDomain(dto: StarshipDto): Starship {
+        val id = UrlExtractor.extractId(dto.url)
         return Starship(
-            id = UrlExtractor.extractId(dto.url),
+            id = id,
             name = dto.name,
             model = dto.model,
             starshipClass = dto.starshipClass,
@@ -72,7 +78,8 @@ object StarshipMapper {
             cargoCapacity = dto.cargoCapacity,
             consumables = dto.consumables,
             pilotIds = UrlExtractor.extractIds(dto.pilots),
-            filmIds = UrlExtractor.extractIds(dto.films)
+            filmIds = UrlExtractor.extractIds(dto.films),
+            imageUrl = ImageUrlProvider.getImageUrl(EntityType.STARSHIP, id)
         )
     }
 
@@ -82,8 +89,9 @@ object StarshipMapper {
 // ===== Vehicle Mapper =====
 object VehicleMapper {
     fun toDomain(dto: VehicleDto): Vehicle {
+        val id = UrlExtractor.extractId(dto.url)
         return Vehicle(
-            id = UrlExtractor.extractId(dto.url),
+            id = id,
             name = dto.name,
             model = dto.model,
             vehicleClass = dto.vehicleClass,
@@ -96,7 +104,8 @@ object VehicleMapper {
             cargoCapacity = dto.cargoCapacity,
             consumables = dto.consumables,
             pilotIds = UrlExtractor.extractIds(dto.pilots),
-            filmIds = UrlExtractor.extractIds(dto.films)
+            filmIds = UrlExtractor.extractIds(dto.films),
+            imageUrl = ImageUrlProvider.getImageUrl(EntityType.VEHICLE, id)
         )
     }
 
@@ -106,8 +115,9 @@ object VehicleMapper {
 // ===== Film Mapper =====
 object FilmMapper {
     fun toDomain(dto: FilmDto): Film {
+        val id = UrlExtractor.extractId(dto.url)
         return Film(
-            id = UrlExtractor.extractId(dto.url),
+            id = id,
             name = dto.title,
             title = dto.title,
             episodeId = dto.episodeId,
@@ -119,7 +129,8 @@ object FilmMapper {
             planetIds = UrlExtractor.extractIds(dto.planets),
             starshipIds = UrlExtractor.extractIds(dto.starships),
             vehicleIds = UrlExtractor.extractIds(dto.vehicles),
-            speciesIds = UrlExtractor.extractIds(dto.species)
+            speciesIds = UrlExtractor.extractIds(dto.species),
+            imageUrl = ImageUrlProvider.getImageUrl(EntityType.FILM, id)
         )
     }
 
@@ -133,7 +144,8 @@ object SearchResultMapper {
             id = person.id,
             name = person.name,
             type = EntityType.PERSON,
-            subtitle = "Birth Year: ${person.birthYear}"
+            subtitle = "Birth Year: ${person.birthYear}",
+            imageUrl = person.imageUrl
         )
     }
 
@@ -142,7 +154,8 @@ object SearchResultMapper {
             id = planet.id,
             name = planet.name,
             type = EntityType.PLANET,
-            subtitle = "Climate: ${planet.climate}"
+            subtitle = "Climate: ${planet.climate}",
+            imageUrl = planet.imageUrl
         )
     }
 
@@ -151,7 +164,8 @@ object SearchResultMapper {
             id = species.id,
             name = species.name,
             type = EntityType.SPECIES,
-            subtitle = "Classification: ${species.classification}"
+            subtitle = "Classification: ${species.classification}",
+            imageUrl = species.imageUrl
         )
     }
 
@@ -160,7 +174,8 @@ object SearchResultMapper {
             id = starship.id,
             name = starship.name,
             type = EntityType.STARSHIP,
-            subtitle = "Model: ${starship.model}"
+            subtitle = "Model: ${starship.model}",
+            imageUrl = starship.imageUrl
         )
     }
 
@@ -169,7 +184,8 @@ object SearchResultMapper {
             id = vehicle.id,
             name = vehicle.name,
             type = EntityType.VEHICLE,
-            subtitle = "Model: ${vehicle.model}"
+            subtitle = "Model: ${vehicle.model}",
+            imageUrl = vehicle.imageUrl
         )
     }
 
@@ -178,7 +194,8 @@ object SearchResultMapper {
             id = film.id,
             name = film.title,
             type = EntityType.FILM,
-            subtitle = "Episode ${film.episodeId} - ${film.releaseDate}"
+            subtitle = "Episode ${film.episodeId} - ${film.releaseDate}",
+            imageUrl = film.imageUrl
         )
     }
 }

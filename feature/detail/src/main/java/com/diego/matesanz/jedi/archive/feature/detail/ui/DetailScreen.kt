@@ -10,8 +10,10 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.unit.dp
 import com.diego.matesanz.jedi.archive.core.designsystem.Spacing
 import com.diego.matesanz.jedi.archive.core.domain.model.EntityType
+import com.diego.matesanz.jedi.archive.core.ui.EntityImage
 import com.diego.matesanz.jedi.archive.feature.detail.DetailUiState
 import com.diego.matesanz.jedi.archive.feature.detail.DetailViewModel
 import com.diego.matesanz.jedi.archive.feature.detail.components.DetailSectionCard
@@ -142,9 +144,12 @@ private fun SuccessState(
                         .padding(Spacing.lg),
                     horizontalAlignment = Alignment.CenterHorizontally
                 ) {
-                    Text(
-                        text = getEntityIcon(entity.type.name),
-                        style = MaterialTheme.typography.displayLarge
+                    EntityImage(
+                        imageUrl = entity.imageUrl,
+                        entityType = entity.type,
+                        modifier = Modifier.size(120.dp),
+                        shape = MaterialTheme.shapes.large,
+                        placeholderTextStyle = MaterialTheme.typography.displayLarge
                     )
                     Spacer(modifier = Modifier.height(Spacing.sm))
                     Text(
@@ -214,20 +219,5 @@ private fun ErrorState(
                 Text("Retry")
             }
         }
-    }
-}
-
-/**
- * Devuelve un emoji según el tipo de entidad
- */
-private fun getEntityIcon(entityType: String): String {
-    return when (entityType) {
-        "PERSON" -> "👤"
-        "PLANET" -> "🌍"
-        "SPECIES" -> "👽"
-        "STARSHIP" -> "🚀"
-        "VEHICLE" -> "🚗"
-        "FILM" -> "🎬"
-        else -> "📄"
     }
 }
