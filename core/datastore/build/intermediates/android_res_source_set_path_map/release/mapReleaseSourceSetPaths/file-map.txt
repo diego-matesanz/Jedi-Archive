@@ -1,9 +1,0 @@
-com.diego.matesanz.jedi.archive.core.datastore-datastore-1.0.0-0 /Users/dmatesanz/.gradle/caches/9.2.1/transforms/3912947bae855a5d959997fd3607f266/transformed/datastore-1.0.0/res
-com.diego.matesanz.jedi.archive.core.datastore-datastore-preferences-1.0.0-1 /Users/dmatesanz/.gradle/caches/9.2.1/transforms/bf61c6e6de460cbab4fb74b1c77d8494/transformed/datastore-preferences-1.0.0/res
-com.diego.matesanz.jedi.archive.core.datastore-pngs-2 /Users/dmatesanz/AndroidStudioProjects/JediArchive/core/datastore/build/generated/res/pngs/release
-com.diego.matesanz.jedi.archive.core.datastore-updated_navigation_xml-3 /Users/dmatesanz/AndroidStudioProjects/JediArchive/core/datastore/build/generated/updated_navigation_xml/release
-com.diego.matesanz.jedi.archive.core.datastore-mergeReleaseResources-4 /Users/dmatesanz/AndroidStudioProjects/JediArchive/core/datastore/build/intermediates/incremental/release/mergeReleaseResources/merged.dir
-com.diego.matesanz.jedi.archive.core.datastore-mergeReleaseResources-5 /Users/dmatesanz/AndroidStudioProjects/JediArchive/core/datastore/build/intermediates/incremental/release/mergeReleaseResources/stripped.dir
-com.diego.matesanz.jedi.archive.core.datastore-release-6 /Users/dmatesanz/AndroidStudioProjects/JediArchive/core/datastore/build/intermediates/merged_res/release/mergeReleaseResources
-com.diego.matesanz.jedi.archive.core.datastore-main-7 /Users/dmatesanz/AndroidStudioProjects/JediArchive/core/datastore/src/main/res
-com.diego.matesanz.jedi.archive.core.datastore-release-8 /Users/dmatesanz/AndroidStudioProjects/JediArchive/core/datastore/src/release/res
